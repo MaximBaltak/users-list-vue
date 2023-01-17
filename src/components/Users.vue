@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import {mapMutations, mapState} from "vuex";
+import { mapState } from "vuex";
 import Progress from "@/components/Progress";
 
 export default {
@@ -55,14 +55,6 @@ export default {
       loader: state => state.filters.loader
     })
   },
-  methods: {
-    ...mapMutations({
-      updateUsers: "filters/updateFilterUsers"
-    })
-  },
-  created() {
-    this.updateUsers()
-  }
 }
 </script>
 
