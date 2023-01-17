@@ -4,7 +4,7 @@
       class="mx-auto"
       style="{position: relative}"
   >
-    <transition-group name="list" tag="v-list" three-line>
+    <transition-group name="list" tag="v-list">
       <v-subheader
           v-if="titleUserList"
           :key="titleUserList"
