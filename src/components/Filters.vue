@@ -32,7 +32,7 @@ export default {
       },
       set(value) {
         this.updateFilterCountry(value)
-        this.updateUsers()
+        this.updateFilterUsers()
       }
     },
     score: {
@@ -41,20 +41,16 @@ export default {
       },
       set(value) {
         this.updateFilterScore(value)
-        this.updateUsers()
+        this.updateFilterUsers()
       }
     },
   },
   methods: {
     ...mapMutations({
-      updateUsers: "filters/updateFilterUsers",
+      updateFilterUsers: "filters/updateFilterUsers",
       updateFilterScore: "filters/updateFilterScore",
       updateFilterCountry: "filters/updateFilterCountry"
     })
   }
 }
 </script>
-
-<style scoped>
-
-</style>

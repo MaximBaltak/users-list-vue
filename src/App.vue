@@ -33,11 +33,11 @@ export default {
   },
   methods:{
     ...mapMutations({
-      updateUsers: "filters/updateFilterUsers"
+      updateFilterUsers: "filters/updateFilterUsers"
     }),
   },
   created() {
-    this.updateUsers()
+    this.updateFilterUsers()
   }
 };
 </script>
