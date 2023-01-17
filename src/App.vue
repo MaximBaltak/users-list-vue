@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import ContentBlock from './components/ContentBlock';
+import ContentBlock from './pages/ContentBlock';
 import Footer from './components/Footer';
 import {mapMutations} from "vuex";
 
