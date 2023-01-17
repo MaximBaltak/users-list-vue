@@ -4,12 +4,12 @@
       class="mx-auto"
       style="{position: relative}"
   >
+    <v-subheader
+        v-if="titleUserList"
+        :key="titleUserList"
+        v-text="titleUserList"
+    ></v-subheader>
     <transition-group name="list" tag="v-list">
-      <v-subheader
-          v-if="titleUserList"
-          :key="titleUserList"
-          v-text="titleUserList"
-      ></v-subheader>
       <template v-for="(item, index) in users">
         <v-divider
             v-if="item.divider"
@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import {mapState} from "vuex";
 import Progress from "@/components/Progress";
 
 export default {
